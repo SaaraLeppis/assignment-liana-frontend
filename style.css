@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap); 
+
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +14,12 @@
   --black-is-black:#000000; 
   --divider-grey: #cccccc; 
   --line-grey:#e0e0e0; 
+
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-black);
+  background-color: var(--liana-green);
+
 
 }
