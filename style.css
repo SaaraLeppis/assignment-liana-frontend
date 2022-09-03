@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --liana-green: #4c8930;
+  --hover-green:#5fb234;
+  --text-black:#373a3c; 
+  --white:#ffffff; 
+  --black-is-black:#000000; 
+  --divider-grey: #cccccc; 
+  --line-grey:#e0e0e0; 
+
+}
