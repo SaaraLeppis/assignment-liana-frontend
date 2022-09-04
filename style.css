@@ -1,9 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap); 
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;600&display=swap); 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -19,7 +22,161 @@
 body{
   font-family: 'Open Sans', sans-serif;
   color: var(--text-black);
+  background-color: var(--white)
+}
+.container{
+  padding: 1em 3em;
+}
+h1{
+  font-size: 56px;
+  color: var(--white);
+  font-weight:100;
+}
+h2{
+  font-size: 32px;
+  color: var(--black-is-black);
+}
+h3{
+  font-size: 28px;
+  color: var(--white);
+}
+li{
+  list-style-type: none; 
+  display: inline-block;
+  padding: 0 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+a{
+  text-decoration: none;
+}
+input, button, .card{
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input{
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 20px; */
+  padding: 10px;
+}
+input:focus{
+  outline: none;
+  border-color: var(--hover-green);
+}
+button{
+padding:10px; 
+margin: 4px;
+background-color: var(--liana-green);
+color: var(--white);
+}
+button:hover{
+background-color: var(--hover-green);
+}
+
+
+/* === Header === */
+header{
+  width: 100vw;
+}
+.upper-band{
   background-color: var(--liana-green);
+  color: var(--white);
+  height:2em; 
+  display: flex;
+  align-items: center;
+  justify-content:right;}
+.main-menu{
+  display: flex;
+  align-items: center;
+  height: 4em;
+}
 
+.logo-svg{
+  height: 2em;
+}
 
+/* === Main === */
+.hero-picture{
+  height:30em;
+  background-image: url(assets/pictures/4L7C5828.svg);
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+align-items: center;
+  height:30em; 
+
+}
+.image{
+  height: 15em;
+  width: 50em;
+  background-repeat: no-repeat; 
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+
+}
+.company{
+  background-image: url(assets/pictures/sisallontuotantoa.svg);
+}
+.products{
+  background-image: url(assets/pictures/markkinoinninautomaation-mvv.svg);
+}
+.contact{
+  background-image: url(assets/pictures/yini.svg);
+}
+
+.company-numbers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--liana-green);
+
+}
+.clients, .employees, .users{
+  display: flex;
+}
+.icon
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+/* References */
+.ref-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5% 0%;
+  align-items: center;
+}
+.card{
+  border: 1px solid var(--line-grey);
+  margin: 2em;
+  padding: 2em;
+  
+}
+
+/* Subscribe */
+/* === Footer === */
+.footer-section{
+  height: 10em;
+  background-color: var(--black-is-black);
+  color: var(--white);
 }

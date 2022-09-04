@@ -6,11 +6,156 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <title>Liana Technologies</title>
 </head>
 
 <body>
-  <h1>Hello World</h1>
+  <header>
+    <div class="container upper-band">
+      <ul>
+        <li>
+          News
+        </li>
+        <li>
+          Intranet
+        </li>
+      </ul>
+
+      <select name="languages" id="language-selector">
+        <option value="english" selected>in English</option>
+        <option value="finnish">Suomeksi</option>
+        <option value="deutch">auf Deutsch</option>
+        <option value="swedish">På Svenska</option>
+        <option value="french">En français</option>
+      </select>
+
+    </div>
+    <div class="container main-menu">
+      <img class="logo-svg" src="./assets/pictures/lianatech_logo.svg" alt="Company logo">
+      <ul>
+        <li>Company</li>
+        <li>Products</li>
+        <li>About Us</li>
+      </ul>
+      <input type='search' placeholder='Search'>
+      <button className='serach-button'>Search</button>
+
+    </div>
+
+  </header>
+  <main>
+    <div class="hero-picture">
+      <h1>Software fueling digital marketing</h1>
+      <button class="learn">Learn more</button>
+
+    </div>
+
+    <div class="image-banner container">
+      <div class="image company">
+        <h3>Company</h2>
+
+      </div>
+
+      <div class="image products">
+        <h3>Products</h2>
+
+      </div>
+      <div class="image contact">
+        <h3>Contact us</h2>
+
+      </div>
+    </div>
+
+    <div class="company-numbers container">
+
+
+      <div class="employees">
+        <div class="icon">
+          <span class="material-icons">business</span>
+
+        </div>
+        <div class="content">
+
+          <p>300</p>
+
+          <p>Employees</p>
+        </div>
+      </div>
+      <div class="clients">
+        <div class="icon">
+          <span class="material-icons">face</span>
+        </div>
+
+        <div class="content">
+          <p>300</p>
+          <p>Clients</p>
+        </div>
+
+      </div>
+
+      <div class="users">
+        <div class="icon">
+          <span class="material-icons">public</span>
+
+        </div>
+        <div class="content">
+
+          <p>300</p>
+
+          <p>Daily users</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="news-section">
+      <h2>Latest news</h2>
+    </div>
+    <div class="refernces-section container">
+      <h2>References</h2>
+      <div class="ref-cards">
+        <div class="card ref-one">
+          <img src="./assets/pictures/Layer 1.svg" alt="reference company logo">
+          <p>Text about the company</p>
+
+        </div>
+
+        <div class="card ref-two">
+          <img src="./assets/pictures/Layer 2.svg" alt="refernce company logo">
+          <p>Text abut company</p>
+
+        </div>
+        <div class="card ref-three">
+          <img src="./assets/pictures/Layer 3.svg" alt="reference company logo">
+
+          <p>Text about company</p>
+        </div>
+        <div class="card ref-four">
+          <img src="./assets/pictures/Layer 4.svg" alt="reference company logo">
+          <p>Text about the company</p>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-section container">
+      <h2>Subscribe to our newsletter</h2>
+
+    </div>
+  </main>
+  <footer class="footer-section container">
+    <p>Liana Technologies</p>
+    <ul>
+      <li>Company</li>
+      <li>Products</li>
+      <li>Contact us</li>
+      <li>News</li>
+      <li>Intranet</li>
+    </ul>
+    <span class="material-icons">facebook</span>
+    <span class="material-icons">Twitter</span>
+    <span class="material-icons">linkedIn </span>
+
+  </footer>
+
 
 </body>
 
