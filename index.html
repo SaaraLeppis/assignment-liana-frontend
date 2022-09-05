@@ -7,9 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Liana Technologies</title>
 </head>
 
@@ -35,41 +40,56 @@
 
     </div>
     <div class="container main-menu">
+      <div class="logo">
+        <img class="logo-svg" src="./assets/pictures/lianatech_logo.svg" alt="Company logo">
+      </div>
 
-      <img class="logo-svg" src="./assets/pictures/lianatech_logo.svg" alt="Company logo">
       <ul class="manu-nav">
-        <li>Company</li>
-        <li>Products</li>
-        <li>Contact us</li>
+        <li>
+          <a href="#">Company</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
       </ul>
       <div class="search-tool">
         <input type='search' placeholder='Search'>
         <button className='search-button'>Search</button>
       </div>
     </div>
-
-  </header>
-
-  <main>
     <div class="jumbotron">
       <div class="jumbotron-content">
         <h1>Software fueling digital marketing</h1>
         <button class="learn">Learn more</button>
       </div>
     </div>
+  </header>
+
+  <main>
+
 
     <div class="image-banner container">
-      <div class="image company">
-        <h3>Company</h2>
+      <div class="image-card company">
+        <a href="#">
+          <h3>Company</h3>
+        </a>
+        <img src="./assets/pictures/sisallontuotantoa.svg" alt="group work by computers">
+
 
       </div>
 
-      <div class="image products">
-        <h3>Products</h2>
+      <div class="image-card products">
+        <h3>Products</h3><img src="./assets/pictures/markkinoinninautomaation-mvv.svg"
+          alt="marketing products to client">
+
 
       </div>
-      <div class="image contact">
-        <h3>Contact us</h2>
+      <div class="image-card contact">
+        <h3>Contact us</h3><img src="./assets/pictures/yini.svg" alt="smiling person by work desk">
+
 
       </div>
     </div>
@@ -77,7 +97,7 @@
     <div class="company-numbers">
 
 
-      <div class="clients">
+      <div class="value-unit">
         <div class="icon">
           <span class="material-icons md-48">business_center</span>
         </div>
@@ -88,7 +108,7 @@
           <p>Clients</p>
         </div>
       </div>
-      <div class="employees">
+      <div class="value-unit">
         <div class="icon">
           <span class="material-icons md-48">face</span>
         </div>
@@ -100,7 +120,7 @@
 
       </div>
 
-      <div class="users">
+      <div class="value-unit">
         <div class="icon">
           <span class="material-icons md-48">public</span>
 
@@ -138,6 +158,7 @@
     </div>
     <div class="references-section container">
       <h2>References</h2>
+
       <div class="ref-cards">
         <div class="card ref-one">
           <img src="./assets/pictures/Layer 1.svg" alt="reference company logo">
@@ -179,18 +200,34 @@
     </div>
   </main>
   <footer class="footer-section container">
-    <p>Liana Technologies</p>
-    <ul>
-      <li>Company</li>
-      <li>Products</li>
-      <li>Contact us</li>
-      <li>News</li>
-      <li>Intranet</li>
-    </ul>
-    <span class="material-icons">facebook</span>
-    <span class="material-icons">Twitter</span>
-    <span class="material-icons">linkedIn </span>
+    <div class="footer-nav">
+      <h4>Liana Technologies</h4>
+      <ul>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Intranet</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <div class="address">
+        <p class="text"><b>Sales & inquiries</b></p>
+        <p class="text">Email: sales@lianatech.com</p>
+        <p class="text">Phone: +358 10 387 7053</p>
+      </div>
+      <button class="contact-btn">Contact us</button>
 
+      <div class="social-media">
+        <a href="https://www.facebook.com/lianatech/" target="_blank" class="social-btn"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/lianatech_fi?lang=en" target="_blank" class="social-btn"><i
+            class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/liana-technologies/?originalSubdomain=fi" target="_blank"
+          class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+
+      </div>
+    </div>
   </footer>
 
 
