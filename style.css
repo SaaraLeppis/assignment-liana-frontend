@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-weight: 300; */
  
 }
 html{
@@ -20,7 +21,6 @@ html{
   --background-grey:#ebedef;
   --divider-grey: #cccccc; 
   --line-grey:#e0e0e0; 
-
 }
 body{
   font-family: 'Open Sans', sans-serif;
@@ -30,7 +30,7 @@ body{
 .container{
   /* padding: 2em 20em; */
   margin: 0 auto;
-  padding: 2em 20em;
+  padding: 4em 20em;
 }
 h1{
   /* font-size: 56px; */
@@ -90,13 +90,12 @@ input, select{
   min-width: 200px;  */
   transition: all 0.2s;
 
-
 }
 input:focus, select:focus{
   outline: none;
   border-color: var(--hover-green);
 }
-button{
+button, input[type="submit"]{
 padding:0.5em 1em; 
 margin: 2em;
 
@@ -109,7 +108,7 @@ border: none;
 transition: all 0.8s;
 
 }
-button:hover{
+button:hover, input[type="submit"]:hover{
 background-color: var(--hover-green);
 }
 
@@ -119,29 +118,28 @@ background-color: var(--hover-green);
   width: 100vw;
 } */
 .upper-band{  
-  height: 4vh; 
+  /* height: 4vh;  */
   background-color: var(--liana-green);
   color: var(--white);
 
   display: flex;
   align-items: center;
   justify-content:right;
-
 }
 .main-menu{
-  height: 8.5vh;
+  /* height: 10vh; */
+  padding-top: 10em;
+  padding-bottom: 10em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
+  flex-wrap: wrap;
 }
 
-
-.logo-svg{
-  min-height: 4em;
+.logo-link img{
+  height: 3em;
 }
-
 
 .jumbotron{
   min-height: 35vh;
@@ -167,13 +165,13 @@ background-color: var(--hover-green);
   justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
-margin-top: 6em;
+/* margin-top: 6em; */
 }
 
 .image-card{
   width: 30%;
   min-width: 40rem;
-  height: calc(18vh - 2em);
+  height: 40rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -247,7 +245,7 @@ gap: 4rem;}
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
+min-width: 550px;
 }
 .content p{
   color: var(--text-black);
@@ -341,13 +339,27 @@ border-bottom: 1px solid var(--line-grey);
 
 /* === SUBSCRIBE === */
 .subscribe-section{
+text-align: center;}
+
+.subscribe-tool{
+  width:100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-.subscribe-section h2, p {
+.subscribe-wrap{
+  width:100%;
+}
+.subscribe-input{
+  width: 40%;
+}
+
+
+
+/* .subscribe-section h2, p {
   text-align: center;
-}
+} */
+
+
 /* === FOOTER === */
 .footer-section{
   min-height: 15vh;
