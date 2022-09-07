@@ -10,7 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -47,10 +47,10 @@
           <img class="logo-svg" src="./assets/pictures/lianatech_logo.svg" alt="Company logo">
         </a>
       </div>
+      <!-- <nav class="mobile-nav"> -->
       <nav>
-        <ul class="manu-nav">
+        <ul class="menu-nav">
           <div class="nav-items">
-
             <li>
               <a href="#">Company</a>
             </li>
@@ -62,13 +62,19 @@
             </li>
           </div>
         </ul>
+        <!-- </nav> -->
+        <form class="search-tool">
+          <div class="search-wrap">
+            <input type='text' placeholder='Search'>
+            <input type="submit" class="search-button" value="Search">
+          </div>
+        </form>
       </nav>
-      <form class="search-tool">
-        <div class="search-wrap">
-          <input type='text' placeholder='Search'>
-          <input type="submit" class="search-button" value="Search">
-        </div>
-      </form>
+      <!-- <a href="#" class="mobile-menu-btn"><i class="fa-brands fa-linkedin-in"></i></a> -->
+      <!-- FOR MOBILE HAMBURGER
+        <div class="menu-icon">
+        <span class="material-icons md-48">menu</span>
+      </div> -->
     </div>
     <div class="jumbotron">
       <div class="jumbotron-content">
@@ -182,7 +188,7 @@
           <img src="./assets/pictures/Layer 2.svg" alt="refernce company logo">
           <h4>
             The Body Shop </h4>
-          <p class="text">The Body SHop ios a global beauty brand and It has more than 3,000 stores in more than 60
+          <p class="text">The Body Shop is a global beauty brand and It has more than 3,000 stores in more than 60
             countries.</p>
 
         </div>
@@ -203,10 +209,12 @@
     </div>
     <div class="subscribe-section container">
       <h2>Subscribe to our newsletter</h2>
-      <p class="text">Follow our story and get latest promotional new about our productsand events.</p>
+      <div class="subscribe-text">
+        <p class="text">Follow our story and get latest promotional new about our productsand events.</p>
+      </div>
       <form class="subscribe-tool">
         <div class="subscribe-wrap">
-          <input class="subscribe-input" type='text' placeholder='Subscribe'>
+          <input class="subscribe-input" type='text' placeholder='Your email address'>
           <input type="submit" class="subscribe-button" value="Subscribe">
         </div>
       </form>
@@ -216,7 +224,7 @@
   <footer class="footer-section container">
     <div class="footer-nav">
       <h4>Liana Technologies</h4>
-      <ul>
+      <ul class="footer-nav-list">
         <li><a href="#">Company</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Contact us</a></li>
@@ -226,12 +234,11 @@
     </div>
     <div class="footer-contact">
       <div class="address">
-        <p class="text"><b>Sales & inquiries</b></p>
+        <p class="text"><b>Sales and inquiries</b></p>
         <p class="text">Email: sales@lianatech.com</p>
         <p class="text">Phone: +358 10 387 7053</p>
       </div>
       <button class="contact-btn">Contact us</button>
-
       <div class="social-media">
         <a href="https://www.facebook.com/lianatech/" target="_blank" class="social-btn"><i
             class="fa-brands fa-facebook-f"></i></a>
