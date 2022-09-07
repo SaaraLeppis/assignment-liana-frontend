@@ -175,10 +175,8 @@ background-color: var(--hover-green);
   justify-content: flex-end;
   align-items: flex-end;
   background-color: aqua;
-  /* float: right; */
   padding-top: 4em;
-  /* position: absolute;
-  top: 0; */
+
 }
 nav{
   width:80%;
@@ -187,8 +185,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 }
-/* .close{display:none}
-.open{display:block} */
+
 
 .menu-icon{
   z-index:10;
@@ -223,6 +220,9 @@ padding-top: 4em;
   display: flex;
   justify-content: center;
   position: relative; 
+  border-radius: 5px;
+}
+.image-card img{
   border-radius: 5px;
 }
 
@@ -260,7 +260,6 @@ gap: 1.5rem;}
 .icon
 {
   color: var(--liana-green);
-
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -468,4 +467,63 @@ margin-left: 2em;
 .fa-brands{
   color: var(--white);
   font-size: 20px;
+}
+
+@media (max-width: 1150px){
+  html{
+    font-size: 14px;
+  }
+  p, .text{
+    font-size: 1.1rem;
+  }
+  .news-card-section{
+    gap: 2em;
+    justify-content: space-evenly;
+  }
+  .card{
+    margin:0.5em;
+    width:25%;
+
+  }
+  .subscribe-text{
+    width:50%;
+  }
+}
+@media (max-width:899px){
+ 
+  .container{padding: 1em 4em;;}
+  .jumbotron{
+    height:40vh;
+  }
+  .ref-cards{
+    gap:1em;
+    justify-content: space-evenly;
+  }
+.card{ 
+min-width: 40% }
+.subscribe-text{
+  width:70%;
+}
+
+}
+@media (max-width:576px){
+  html{
+    font-size: 10px;
+  }
+  .container{padding: 1em 2em;;}
+
+  .ref-cards{
+    gap:2em;
+  }
+  .card{
+    width:45%;
+  } 
+  .card p{
+    margin: 8px 10px 20px 10px}
+  
+    .subscribe-text{
+      width:70%;
+    }
+
+
 }
