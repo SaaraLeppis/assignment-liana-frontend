@@ -93,22 +93,16 @@ input:focus, select:focus{
 button, input[type="submit"]{
 padding:0.4em 0.8em; 
 margin: 1em 0 1em 1em;
-
+border: 1px solid var(--liana-green);
 background-color: var(--liana-green);
 color: var(--white);
-border: none; 
 transition: all 0.8s;
-font-weight: 300;
 }
 
-/* button{
-  padding: 0.8em 1em;
-  font-size: 1.3rem;
-  font-weight: 300;
 
-} */
 button:hover, input[type="submit"]:hover{
 background-color: var(--hover-green);
+border: 1px solid var(--hover-green);
 }
 
 
@@ -126,6 +120,9 @@ background-color: var(--hover-green);
   align-items: center;
   justify-content:right;
   padding: 0.5em 6em;
+/* 
+  z-index: 5;
+  position: fixed; */
 }
 .main-menu{
   display: flex;
@@ -133,6 +130,12 @@ background-color: var(--hover-green);
   justify-content: space-between;
   align-items: center;  
   flex-wrap: wrap;
+}
+.desktop-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 
 .logo-link img{
@@ -145,6 +148,7 @@ background-color: var(--hover-green);
   justify-content: space-between;
   flex-wrap: wrap;
 } */
+
 
 
 .jumbotron{
@@ -160,6 +164,7 @@ background-color: var(--hover-green);
   justify-content: center;
   text-align: center;
   /* position: relative; */
+  object-fit: cover;
 }
 .learn{
   padding: 0.8em 1em;
@@ -168,22 +173,73 @@ background-color: var(--hover-green);
 
 }
 /* = = = Mobile settings = = =  */
-.mobile-nav{
-  display: flex;
+
+.mobile{
+  /* display: flex; */
+  display: none;
   flex-direction: column;
-  position: relative;
   justify-content: flex-end;
   align-items: flex-end;
-  background-color: aqua;
-  padding-top: 4em;
-
+  background-color: var(--white);
+  /* opacity: 0.5; */
+  padding: 1em;
+  color: var(--text-black);
+  border: 1px solid orangered;
 }
-nav{
+/* nav{
   width:80%;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
+} */
+/* .mobile-nav,  */
+.mobile-menu-nav, .mobile-nav-items{
+  display: flex;  
+  flex-direction: column; 
+  }
+  .mobile li{
+    margin: 6px;
+    border-bottom: 0.5px solid #b7dfa4;
+  }
+  .mobile li:first-child{
+    padding-bottom: 0.2em;
+  }
+  
+  .mobile li:hover{
+    font-weight: bold;
+  }
+  .mobile select{
+    /* border: none; */
+    background-color: var(--white);
+
+  }
+  .mobile-search-button{
+    background-color:var(--liana-green);
+    color: var(--white);
+    padding: 0 1em;
+  }
+  .mobile-search-wrap{
+    display: flex;
+    align-items: center;
+  }
+ 
+  .mobile input{
+    border: 1px solid var(--line-grey);
+    margin: 0 1em;
+    /* display: inline-block; */
+
+  }
+  .material-icons.md-24 { font-size: 2.2rem; }
+
+
+  .mobile input, .mobile select{
+    width: 60%;
+      /* padding: 0.25em 0.1em;   */
+  }
+
+.close{
+  display: none;
 }
 
 
@@ -198,6 +254,10 @@ justify-content: space-between;
   /* display: none; */
   /* transition: all 0.2s ease-in;*/
 }
+
+/* The End = = = END of mobile nav  =  == = = */
+
+
 /* === Main === */
 
 /* === IMAGE BANNER ===  */
@@ -490,8 +550,13 @@ margin-left: 2em;
   }
 }
 @media (max-width:899px){
- 
-  .container{padding: 1em 4em;;}
+ /* .upper-band{
+  justify-content: left;
+ } */
+
+  .container{
+    padding: 1em 4em;;
+  }
   .jumbotron{
     height:40vh;
   }
@@ -500,16 +565,17 @@ margin-left: 2em;
     justify-content: space-evenly;
   }
 .card{ 
-min-width: 40% }
+min-width: 40% 
+}
 .subscribe-text{
   width:70%;
 }
 
+
+
 }
 @media (max-width:576px){
-  html{
-    font-size: 10px;
-  }
+
   .container{padding: 1em 2em;;}
 
   .ref-cards{
@@ -527,3 +593,4 @@ min-width: 40% }
 
 
 }
+

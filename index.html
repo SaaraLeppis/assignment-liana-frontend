@@ -47,8 +47,7 @@
           <img class="logo-svg" src="./assets/pictures/lianatech_logo.svg" alt="Company logo">
         </a>
       </div>
-      <!-- <nav class="mobile-nav"> -->
-      <nav>
+      <nav class="desktop-nav">
         <ul class="menu-nav">
           <div class="nav-items">
             <li>
@@ -62,11 +61,13 @@
             </li>
           </div>
         </ul>
+
         <!-- </nav> -->
         <form class="search-tool">
           <div class="search-wrap">
             <input type='text' placeholder='Search'>
-            <input type="submit" class="search-button" value="Search">
+            <!-- <input type="submit" class="search-button" value="Search"> -->
+            <button class="search-button"><span class="button-text">Search</span></button>
           </div>
         </form>
       </nav>
@@ -75,6 +76,46 @@
         <div class="menu-icon">
         <span class="material-icons md-48">menu</span>
       </div> -->
+
+      <!-- <nav class="mobile-nav"> -->
+      <nav class="mobile-nav mobile">
+        <ul class="mobile-menu-nav">
+          <div class="mobile-nav-items">
+            <li>
+              <select name="languages" id="language-selector">
+                <option value="english" selected>In English</option>
+                <option value="finnish">Suomeksi</option>
+                <option value="deutsch">Auf Deutsch</option>
+                <option value="swedish">På Svenska</option>
+                <option value="french">En français</option>
+              </select>
+            </li>
+            <li>
+              <a href="#">Company</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a class="text" href="#">News</a>
+            </li>
+            <li>
+              <a class="text" href="#">Intranet</a>
+            </li>
+
+            <form class="mobile-search-tool">
+              <div class="mobile-search-wrap">
+                <input type='text' placeholder='Search'>
+                <!-- <input type="submit" class="search-button" value="Search"> -->
+                <button class="mobile-search-button"><span class="material-icons md-24">search</span></button>
+              </div>
+            </form>
+
+          </div>
+        </ul>
     </div>
     <div class="jumbotron">
       <div class="jumbotron-content">

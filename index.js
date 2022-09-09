@@ -2,6 +2,18 @@
 const btn = document.querySelector('.subscribe-tool')
 const navigation = document.querySelector('.main-menu');
 console.log(navigation)
+const upperNavigation = document.querySelector('.upper-band');
+
+window.onscroll = () => {
+  scrollNavigation()
+}
+
+scrollNavigation = () => {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    upperNavigation.classList.add("close")
+  }
+
+}
 // display values on load
 const displayValues = document.querySelectorAll('.count');
 const speed = 50000;
