@@ -1,5 +1,5 @@
 'use strict';
-const btn = document.querySelector('.subscribe-tool')
+const btn = document.querySelector('.subscribe-button')
 const navigation = document.querySelector('.main-menu');
 console.log(navigation)
 const upperNavigation = document.querySelector('.upper-band');
@@ -38,9 +38,9 @@ displayValues.forEach((displayValue) => {
   }, duration)
 })
 
-btn.addEventListener('submit', () => {
-  alert('Thank you to subscribe our news letter!')
-})
+// btn.addEventListener('submit', () => {
+//   alert('Thank you to subscribe our news letter!')
+// })
 
 // mobile menu 
 // const hamburger = document.querySelector(".menu-icon")
@@ -60,7 +60,8 @@ const mobileNavigator = document.querySelector(".mobile")
 const hamburgerMenu = document.querySelector(".menu-icon")
 let showMenu = false;
 
-hamburgerMenu.addEventListener("click", () => {
+hamburgerMenu.addEventListener("click", (event) => {
+  event.preventDefault()
   console.log('click')
 
   if (showMenu) {
@@ -72,4 +73,23 @@ hamburgerMenu.addEventListener("click", () => {
     showMenu = true
   }
 
+})
+
+const messageClose = document.querySelector('.message-close-btn');
+const messageArea = document.querySelector('.message-container')
+
+messageClose.addEventListener('click', (event) => {
+  event.preventDefault()
+  messageArea.style.display = "none"
+})
+
+const close = messageArea.style.display = "none";
+
+btn.addEventListener('click', (event) => {
+  event.preventDefault()
+  console.log('click')
+  messageArea.style.display = "flex"
+  setTimeout(() => {
+    messageArea.style.display = 'none'
+  }, 2800)
 })
