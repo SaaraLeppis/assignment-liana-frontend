@@ -73,6 +73,9 @@ a{
   text-decoration: none !important;
   color: inherit;
 }
+a:hover{
+  font-weight: bold;
+}
 input, button, select, .card, .image{
   border-radius: 5px;
   cursor: pointer;
@@ -533,7 +536,7 @@ margin-left: 2em;
 .social-media{
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  /* gap: 1em; */
 }
 .social-btn{
   height: 40px;
@@ -546,6 +549,7 @@ margin-left: 2em;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
+  margin: 0 0.5em;
   
 }
 .social-btn:hover{
@@ -564,6 +568,9 @@ margin-left: 2em;
   p, .text{
     font-size: 1.1rem;
   }
+  .image-banner{
+    justify-content: center;
+  }
   .news-card-section{
     gap: 2em;
     justify-content: space-evenly;
@@ -578,6 +585,7 @@ margin-left: 2em;
   }
 }
 /* @media (max-width:899px){ */
+
   @media (max-width:915px){
  /* .upper-band{
   justify-content: left;
@@ -610,7 +618,8 @@ flex-wrap: nowrap;
   .jumbotron{
     height:40vh;
   }
-  .image-banner, .ref-cards{
+  
+  .ref-cards{
     gap: 1em;
     justify-content: center;
   }
@@ -643,7 +652,9 @@ gap:1em;
     font-size: 3.2rem;
   }
  
-
+.count{
+  font-size: 3rem;
+}
   .ref-cards{
     gap:2em;
   }
