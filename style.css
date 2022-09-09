@@ -105,6 +105,16 @@ background-color: var(--hover-green);
 border: 1px solid var(--hover-green);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: var(--white);
+}
+/* .sticky + .content {
+  padding-top: 60px;
+} */
 
 /* === Header === */
 
@@ -121,8 +131,9 @@ border: 1px solid var(--hover-green);
   justify-content:right;
   padding: 0.5em 6em;
 /* 
-  z-index: 5;
-  position: fixed; */
+  z-index: 5;*/
+  width: 100vw;
+
 }
 .main-menu{
   display: flex;
@@ -130,6 +141,8 @@ border: 1px solid var(--hover-green);
   justify-content: space-between;
   align-items: center;  
   flex-wrap: wrap;
+  /* position: sticky; */
+
 }
 .desktop-nav{
   display: flex;

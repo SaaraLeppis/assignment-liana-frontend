@@ -3,16 +3,22 @@ const btn = document.querySelector('.subscribe-tool')
 const navigation = document.querySelector('.main-menu');
 console.log(navigation)
 const upperNavigation = document.querySelector('.upper-band');
+const mainMenu = document.querySelector('.main-menu')
 
-window.onscroll = () => {
-  scrollNavigation()
-}
+const offsetPosition = mainMenu.offsetTop;
 
-scrollNavigation = () => {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    upperNavigation.classList.add("close")
+window.onscroll
+  = () => {
+    scrollNavigation()
   }
 
+const scrollNavigation = () => {
+  if (document.body.scrollTop >= offsetPosition || document.documentElement.scrollTop >= offsetPosition) {
+    mainMenu.classList.add('sticky')
+  }
+  else {
+    mainMenu.classList.remove('sticky')
+  }
 }
 // display values on load
 const displayValues = document.querySelectorAll('.count');
@@ -36,16 +42,16 @@ btn.addEventListener('submit', () => {
 })
 
 // mobile menu 
-const hamburger = document.querySelector(".menu-icon")
+// const hamburger = document.querySelector(".menu-icon")
 
-hamburger.addEventListener("click", () => {
-  navigation.classList.toggle('open')
-})
+// hamburger.addEventListener("click", () => {
+//   navigation.classList.toggle('open')
+// })
 
-navigation.addEventListener('click', () => {
-  if (document.body.clientWidth < 1000) {
-    // hamburger.classList.remove("close")
-    navigation.classList.add("mobile-menu")
-    console.log('now')
-  }
-})
+// navigation.addEventListener('click', () => {
+//   if (document.body.clientWidth < 1000) {
+//     // hamburger.classList.remove("close")
+//     navigation.classList.add("mobile-menu")
+//     console.log('now')
+//   }
+// })
