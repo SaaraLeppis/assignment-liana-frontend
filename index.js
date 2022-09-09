@@ -6,6 +6,7 @@ const upperNavigation = document.querySelector('.upper-band');
 const mainMenu = document.querySelector('.main-menu')
 
 const offsetPosition = mainMenu.offsetTop;
+console.log('innerWidth', window.innerWidth, 'some', document.body.clientWidth)
 
 window.onscroll
   = () => {
@@ -55,3 +56,20 @@ btn.addEventListener('submit', () => {
 //     console.log('now')
 //   }
 // })
+const mobileNavigator = document.querySelector(".mobile")
+const hamburgerMenu = document.querySelector(".menu-icon")
+let showMenu = false;
+
+hamburgerMenu.addEventListener("click", () => {
+  console.log('click')
+
+  if (showMenu) {
+    mobileNavigator.style.display = "none"
+    showMenu = false
+  }
+  else {
+    mobileNavigator.style.display = "flex"
+    showMenu = true
+  }
+
+})

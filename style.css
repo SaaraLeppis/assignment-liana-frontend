@@ -109,12 +109,15 @@ border: 1px solid var(--hover-green);
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 20;
   background-color: var(--white);
 }
 /* .sticky + .content {
   padding-top: 60px;
 } */
+.open {
+  display: flex;
+}
 
 /* === Header === */
 
@@ -188,16 +191,25 @@ border: 1px solid var(--hover-green);
 /* = = = Mobile settings = = =  */
 
 .mobile{
-  /* display: flex; */
-  display: none;
+  /* display: flex;  */
+  display: none; 
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  background-color: var(--white);
+  background-color: #f3faf0;
   /* opacity: 0.5; */
   padding: 1em;
-  color: var(--text-black);
-  border: 1px solid orangered;
+  color: var(--black-is-black);
+  position: fixed;
+  top:5.6em;
+  right:0;
+  z-index:100;
+}
+.menu-icon{
+  /* background-color: #4c8930; */
+  display: none;
+  width:100%;
+text-align: right;
 }
 /* nav{
   width:80%;
@@ -213,11 +225,12 @@ justify-content: space-between;
   }
   .mobile li{
     margin: 6px;
-    border-bottom: 0.5px solid #b7dfa4;
+    border-bottom: 0.2px solid #b7dfa4;
   }
   .mobile li:first-child{
     padding-bottom: 0.2em;
   }
+ 
   
   .mobile li:hover{
     font-weight: bold;
@@ -258,9 +271,9 @@ justify-content: space-between;
 
 .menu-icon{
   z-index:10;
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+  /* position: absolute; */
+  /* top: 1.5rem;
+  right: 1rem; */
   cursor: pointer;
   color: var(--black-is-black);
   font-size: 20px;
@@ -300,7 +313,7 @@ padding-top: 4em;
 }
 
 .image-card h3{
-  z-index:99;
+  z-index:9;
   position: absolute;
   top: 0;
   left: 0;
@@ -562,11 +575,29 @@ margin-left: 2em;
     width:50%;
   }
 }
-@media (max-width:899px){
+/* @media (max-width:899px){ */
+  @media (max-width:915px){
  /* .upper-band{
   justify-content: left;
  } */
-
+ .menu-icon{
+  display
+  : block;
+}
+.upper-band{
+display: none;}
+.upper-nav, .language-selector{
+  display: none;
+}
+.main-menu{background-color: var(--liana-green);
+flex-wrap: nowrap;}
+.desktop-nav, .menu-nav{display:none;}
+/* .logo{
+  position: absolute;
+  top:1em; 
+  left: 4em;
+  
+} */
   .container{
     padding: 1em 4em;;
   }
@@ -584,12 +615,15 @@ min-width: 40%
   width:70%;
 }
 
-
+.footer-nav{
+  display: none;
+}
 
 }
 @media (max-width:576px){
 
-  .container{padding: 1em 2em;;}
+  .container{padding: 1em 2em;}
+
 
   .ref-cards{
     gap:2em;
@@ -603,7 +637,5 @@ min-width: 40%
     .subscribe-text{
       width:70%;
     }
-
-
 }
 
