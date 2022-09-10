@@ -280,7 +280,8 @@ gap: 1em;
 .value-unit{
   display: flex;
   align-items: center;
-  gap: 1.5rem;}
+  margin: 1.5rem;
+}
 
 .icon
 {
@@ -536,10 +537,11 @@ min-width: 40%
 }
 .footer-contact{
   flex-wrap: wrap;
- align-content: center;
- align-items: center;
-gap:1em;
+  align-content: center;
+  align-items: center;
+  gap:1em;
 }
+
 .contact-btn{
   margin:0;
 }
@@ -547,7 +549,9 @@ gap:1em;
 
 @media (max-width:576px){
 
-  .container{padding: 1em 2em;}
+  .container{
+    padding: 1em 2em;
+  }
   h1{
     font-size: 3.2rem;
   }
@@ -583,34 +587,31 @@ gap:1em;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  /* background-color: var(--white); */
-  /* z-index: 2; */
-  border: 1px solid orange;
   position:fixed;
   top:0;
   bottom:0;
   left: 0;
-right:0; 
-background-color: rgba(0,0,0,0.6);
-/* transition: opacity 500ms; */
-/* visibility: hidden; */
-opacity:1;
-border:2px solid #5fb234;
-transition: all ease-in-out 2s;
+  right:0; 
+  background-color: rgba(0,0,0,0.6);
+  /* transition: opacity 500ms; */
+  /* visibility: hidden; */
+  opacity:1;
+  border:2px solid #5fb234;
+  transition: all ease-in-out 2s;
 }
 
 .message-wrap{
   position: relative;
   display:flex; 
-  width: 60%;
-  height: 40%;
-  flex-direction: column;
+  width: 50%;
+  height: 30%;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   background-color: var(--white);
   z-index: 12;
-  border: 2px solid orange;
+  border: 0.5px solid var(--hover-green);
   opacity: 1;
   margin: 100px auto;
   padding:20px 10px 10px;
@@ -633,17 +634,17 @@ margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height:80px;
+  width: 60px;
+  height:60px;
   background: var(--background-white);
   border: 4px solid var(--liana-green);
   border-radius: 50%; 
+  padding: 4em;
 }
 
 
  #symbol{
   position: absolute; 
-/* ß  margin-right: auto; */
   font-size: 4rem;
   animation: appear 1.2s ease-in-out;
   animation-fill-mode: forwards;

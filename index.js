@@ -72,5 +72,5 @@ subscribeButton.addEventListener('click', (event) => {
   messageArea.style.display = "flex"
   setTimeout(() => {
     messageArea.style.display = 'none'
-  }, 2800)
+  }, 2900)
 })
