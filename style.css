@@ -138,7 +138,6 @@ border: 1px solid var(--hover-green);
   min-height: 40vh;
   background-image: url(assets/pictures/4L7C5828.svg);
   background-repeat: no-repeat; 
-  background-position: top 20% center;
   background-size: 110%;
   display: flex;
   flex-direction: column;
