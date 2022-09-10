@@ -1,13 +1,19 @@
 'use strict';
-const btn = document.querySelector('.subscribe-button')
+
+// selectors
+const subscribeButton = document.querySelector('.subscribe-button')
 const navigation = document.querySelector('.main-menu');
-console.log(navigation)
 const upperNavigation = document.querySelector('.upper-band');
 const mainMenu = document.querySelector('.main-menu')
+const mobileNavigator = document.querySelector(".mobile")
+const hamburgerMenu = document.querySelector(".menu-icon")
+const displayValues = document.querySelectorAll('.count');
+const messageClose = document.querySelector('.message-close-btn');
+const messageArea = document.querySelector('.message-container')
 
-const offsetPosition = mainMenu.offsetTop;
-console.log('innerWidth', window.innerWidth, 'some', document.body.clientWidth)
+let offsetPosition = mainMenu.offsetTop;
 
+// STICKY NAVBAR
 window.onscroll
   = () => {
     scrollNavigation()
@@ -21,10 +27,9 @@ const scrollNavigation = () => {
     mainMenu.classList.remove('sticky')
   }
 }
-// display values on load
-const displayValues = document.querySelectorAll('.count');
-const speed = 50000;
 
+// COUNTING VALUES
+const speed = 50000;
 displayValues.forEach((displayValue) => {
   let startValue = 0;
   let targetValue = +displayValue.getAttribute('data-target');
@@ -38,32 +43,11 @@ displayValues.forEach((displayValue) => {
   }, duration)
 })
 
-// btn.addEventListener('submit', () => {
-//   alert('Thank you to subscribe our news letter!')
-// })
-
-// mobile menu 
-// const hamburger = document.querySelector(".menu-icon")
-
-// hamburger.addEventListener("click", () => {
-//   navigation.classList.toggle('open')
-// })
-
-// navigation.addEventListener('click', () => {
-//   if (document.body.clientWidth < 1000) {
-//     // hamburger.classList.remove("close")
-//     navigation.classList.add("mobile-menu")
-//     console.log('now')
-//   }
-// })
-const mobileNavigator = document.querySelector(".mobile")
-const hamburgerMenu = document.querySelector(".menu-icon")
+// MOBILE MENU
 let showMenu = false;
 
 hamburgerMenu.addEventListener("click", (event) => {
   event.preventDefault()
-  console.log('click')
-
   if (showMenu) {
     mobileNavigator.style.display = "none"
     showMenu = false
@@ -75,9 +59,7 @@ hamburgerMenu.addEventListener("click", (event) => {
 
 })
 
-const messageClose = document.querySelector('.message-close-btn');
-const messageArea = document.querySelector('.message-container')
-
+// SUBSCRIBE MESSAGE
 messageClose.addEventListener('click', (event) => {
   event.preventDefault()
   messageArea.style.display = "none"
@@ -85,9 +67,8 @@ messageClose.addEventListener('click', (event) => {
 
 const close = messageArea.style.display = "none";
 
-btn.addEventListener('click', (event) => {
+subscribeButton.addEventListener('click', (event) => {
   event.preventDefault()
-  console.log('click')
   messageArea.style.display = "flex"
   setTimeout(() => {
     messageArea.style.display = 'none'
