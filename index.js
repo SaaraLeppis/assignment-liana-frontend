@@ -2,11 +2,10 @@
 
 // selectors
 const subscribeButton = document.querySelector('.subscribe-button')
-const navigation = document.querySelector('.main-menu');
 const upperNavigation = document.querySelector('.upper-band');
 const mainMenu = document.querySelector('.main-menu')
-const mobileNavigator = document.querySelector(".mobile")
-const hamburgerMenu = document.querySelector(".menu-icon")
+const mobileNavigator = document.querySelector('.mobile')
+const hamburgerMenu = document.querySelector('.menu-icon')
 const displayValues = document.querySelectorAll('.count');
 const messageClose = document.querySelector('.message-close-btn');
 const messageArea = document.querySelector('.message-container')
@@ -81,6 +80,5 @@ subscribeButton.addEventListener('click', (event) => {
   messageArea.style.display = "flex"
   setTimeout(() => {
     messageArea.style.display = 'none'
-  }, 290000)
-  //2900
+  }, 2900)
 })
