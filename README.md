@@ -1,6 +1,6 @@
 # Front-End assignment for Liana Technologies
 
-This is assignment from Liana Tecnologies. Task was to create given page with HTML and CSS.
+This is assignment from Liana Tecnologies. Task was to create given web page with HTML and CSS.
 
 ## Technologies used
 

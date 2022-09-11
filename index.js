@@ -12,18 +12,27 @@ const messageClose = document.querySelector('.message-close-btn');
 const messageArea = document.querySelector('.message-container')
 
 let offsetPosition = mainMenu.offsetTop;
-
 // STICKY NAVBAR
 window.onscroll
   = () => {
     scrollNavigation()
   }
 
+// const scrollNavigation = () => {
+//   if (document.body.scrollTop >= offsetPosition || document.documentElement.scrollTop >= offsetPosition) {
+//     mainMenu.classList.add('sticky')
+//   }
+//   else {
+//     mainMenu.classList.remove('sticky')
+//   }
+// }
 const scrollNavigation = () => {
-  if (document.body.scrollTop >= offsetPosition || document.documentElement.scrollTop >= offsetPosition) {
+  if (window.pageYOffset >= offsetPosition) {
+    console.log('add sticky')
     mainMenu.classList.add('sticky')
   }
   else {
+    console.log('remove')
     mainMenu.classList.remove('sticky')
   }
 }
@@ -72,5 +81,6 @@ subscribeButton.addEventListener('click', (event) => {
   messageArea.style.display = "flex"
   setTimeout(() => {
     messageArea.style.display = 'none'
-  }, 2900)
+  }, 290000)
+  //2900
 })
