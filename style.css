@@ -99,16 +99,12 @@ border: 1px solid var(--hover-green);
   z-index: 20;
   background-color: var(--white); 
 }
-/* .sticky + .jumbotron{
-margin-top: 1em;
-} */
 
 .open {
   display: flex;
 }
 
 /* === Header === */
-
 .upper-band{  
   background-color: var(--liana-green);
   color: var(--white);
@@ -157,8 +153,8 @@ margin-top: 1em;
   font-weight: 300;
 
 }
-/* = = = Mobile NAV = = =  */
 
+/* = = = Mobile NAV = = =  */
 .mobile{
   display: none; 
   flex-direction: column;
@@ -181,7 +177,7 @@ text-align: right;
 .mobile-menu-nav, .mobile-nav-items{
   display: flex;  
   flex-direction: column; 
-  }
+}
   .mobile li{
     margin: 6px;
     border-bottom: 0.2px solid #b7dfa4;
@@ -228,9 +224,9 @@ text-align: right;
   font-size: 20px;
 }
 
-/* The End = = = END of mobile nav  =  == = = */
+/* = = = END of mobile nav  = = = */
 
-/* === IMAGE BANNER ===  */
+/* = = = IMAGE BANNER = = =  */
 .image-banner{ 
   display: flex;
   flex-direction: row;
@@ -269,8 +265,7 @@ gap: 1em;
   align-items: center;
 }
 
-/* === NUMBERS === */
-
+/* = = = NUMBERS = = = */
 .company-numbers{ 
   min-height: 12vh; 
   display: flex;
@@ -286,8 +281,7 @@ gap: 1em;
   margin: 1.5rem;
 }
 
-.icon
-{
+.icon{
   color: var(--liana-green);
   height: 4rem;
   width: 4rem;
@@ -313,8 +307,7 @@ gap: 1em;
 
 .material-icons.md-48 { font-size: 4.6rem; }
 
-
-/* === NEWS === */
+/* = = = NEWS = = = */
 .news-section{
   min-height: 28vh;
   text-align: center;
@@ -350,7 +343,7 @@ gap: 1em;
   box-shadow: 2px 4px 10px var(--divider-grey);
 }
 
-/* === REFERENCES === */
+/* = = = REFERENCES = = = */
 .references-section{
   min-height:40vh;
  text-align: center;
@@ -385,7 +378,7 @@ border-bottom: 1px solid var(--line-grey);
   line-height: 1.5em;
 } 
 
-/* === SUBSCRIBE === */
+/* = = = SUBSCRIBE = = = */
 .subscribe-section{
   text-align: center;
   padding-top: 3em;
@@ -412,7 +405,8 @@ border-bottom: 1px solid var(--line-grey);
 .subscribe-input{
   width: 40%;
 }
-/* ALERT MESSAGE */
+
+/* = = = ALERT MESSAGE = = = */
 .message-container{
   display: none;
   justify-content: center;
@@ -424,8 +418,6 @@ border-bottom: 1px solid var(--line-grey);
   left: 0;
   right:0; 
   background-color: rgba(0,0,0,0.6);
-  /* transition: opacity 500ms; */
-  /* visibility: hidden; */
   opacity:1;
   border:2px solid #5fb234;
   transition: all ease-in-out 2s;
@@ -436,7 +428,6 @@ border-bottom: 1px solid var(--line-grey);
   display:flex; 
   width: 60%;
   height: 30%;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -504,7 +495,7 @@ margin: 5px;
   text-align: center;
 }
 
-/* === FOOTER === */
+/* = = = FOOTER = = = */
 .footer-section{
   min-height: 15vh;
   background-color: var(--black-is-black);
@@ -645,7 +636,6 @@ min-width: 40%
 }
 
 @media (max-width:576px){
-
   .container{
     padding: 1em 2em;
   }
@@ -665,25 +655,26 @@ min-width: 40%
   .card p{
     margin: 8px 10px 20px 10px}
   
-    .subscribe-text{
-      width:70%;
+  .subscribe-text{
+    width:70%;
+  }
+  .subscribe-input{
+  width: auto;
     }
-    .subscribe-input{
-      width: auto;
-    }
-.message-wrap{
-  width: 80%;
+  .message-wrap{
+    width: 80%;
+  }
+  .footer-contact{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-    .footer-contact{
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .address{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-}
+
 @media (max-width:340px){
   h1{font-size: 2rem;}
   .logo-link img{

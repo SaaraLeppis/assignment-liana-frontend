@@ -17,14 +17,6 @@ window.onscroll
     scrollNavigation()
   }
 
-// const scrollNavigation = () => {
-//   if (document.body.scrollTop >= offsetPosition || document.documentElement.scrollTop >= offsetPosition) {
-//     mainMenu.classList.add('sticky')
-//   }
-//   else {
-//     mainMenu.classList.remove('sticky')
-//   }
-// }
 const scrollNavigation = () => {
   if (window.pageYOffset >= offsetPosition) {
     console.log('add sticky')

@@ -8,7 +8,7 @@ Built with:
 
 - HTML
 - CSS
-- Java Script
+- JavaScript
 
 ## Setup and usage
 
